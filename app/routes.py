@@ -21,11 +21,11 @@ def adicionar_usuario():
     novo_usuario = adicionar(nome, email)
     return jsonify(novo_usuario.to_dict()), 201
 
-@app.route("/usuario", methods=['GET'])
+@app.route("/usuarios", methods=['GET'])
 def listagem_de_usuarios():
     return jsonify(listar_usuarios())
 
-@app.route("/usuario/<int:id_usuario>", methods=['PUT'])
+@app.route("/usuarios/<int:id_usuario>", methods=['PUT'])
 def atualizar_usuario(id_usuario):
     data= request.get_json()
     nome = data.get('nome')
@@ -40,7 +40,7 @@ def atualizar_usuario(id_usuario):
     else:
         return jsonify({"Usuário não encontrado, tente novamente"}), 404
 
-@app.route("/usuario/<int:id_usuario>", methods=['DELETE'])
+@app.route("/usuarios/<int:id_usuario>", methods=['DELETE'])
 def deletar_usuario(id_usuario):
 
     usuario_deletado = deletar(id_usuario)
