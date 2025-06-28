@@ -1,6 +1,4 @@
-# API-RESTful-Residencia
-
-# 📄 Documentação - API com Python (Flask) - Residência (ATIVIDADE)
+# 📄 Documentação - API RESTful com Python (Flask) - Residência Softex Pernambuco
 
 ## 🗂️ Organização:
 ```
@@ -17,10 +15,6 @@ API-RESTful-Residencia/
 ├── README.md
 ├── requirements.txt
 ```
-
-## 🚀 URL da API
-
-- Local: `http://localhost:5000`  
 
 ## 📦 Detalhes dos Endpoints
 
