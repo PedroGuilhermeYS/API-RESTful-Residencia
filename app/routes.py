@@ -36,9 +36,9 @@ def atualizar_usuario(id_usuario):
 
     novo_usuario = atualizar(id_usuario, nome, email)
     if novo_usuario == None:
-        return jsonify(novo_usuario.to_dict())
-    else:
         return jsonify({"Usuário não encontrado, tente novamente"}), 404
+    else:
+        return jsonify(novo_usuario.to_dict())
 
 @app.route("/usuarios/<int:id_usuario>", methods=['DELETE'])
 def deletar_usuario(id_usuario):
